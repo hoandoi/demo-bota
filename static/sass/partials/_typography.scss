@@ -1,0 +1,53 @@
+$body-font-family:'Montserrat', sans-serif;
+$font-bold:bold;
+$line-height:25px;
+$font-size:14px;
+
+.remarkable h3 a:hover,.slide_content h3 a:hover{
+    color:$base-hover-background;
+}
+// title category
+.bnc_main_category_title{
+    margin-bottom: 30px;
+    h2{
+        line-height: 22px;
+        span{
+            font-size: 14px;
+            color: #fff;
+            padding: 7px 15px 4px;
+            text-transform: uppercase;
+        }
+    }
+    ul{
+        li{
+            margin-left: 28px;
+            a{
+                display: block;
+                font-size: 13px;
+                color: #777;
+            }
+        }
+    }
+}
+
+// title sidebar
+.bnc_block_title{
+    margin-bottom:30px;
+    h2{
+        line-height: 22px;
+        span{
+            font-size: 14px;
+            color: #fff;
+            padding: 7px 15px 4px;
+            text-transform: uppercase;
+        }
+    }
+}
+// title footer
+.bnc_footer_mid_widget_title{
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+

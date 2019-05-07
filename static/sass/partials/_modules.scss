@@ -1,0 +1,182 @@
+
+// nút scroll top
+.bnc_scrolltop{
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 5%;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #4db2ec;
+    z-index: 9999;
+    color: #fff;
+}
+
+// popup khi load trang
+.modal-body { 
+    h1 { 
+      font-weight:900; 
+      font-size:2.3em;
+      text-transform:uppercase;
+    }
+    
+    a.pre-order-btn { 
+      color:#000;
+      background-color:gold;
+      border-radius:1em;
+      padding:1em;
+      display: block;
+      margin: 2em auto;
+      width:50%;
+      font-size:1.25em;
+      font-weight:6600;
+      &:hover { 
+      background-color:#000;
+        text-decoration:none;
+        color:gold;
+      }
+    }  
+}
+
+// nút call now
+.phone-call {
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    bottom:5%;
+    background-color: rgb(77, 178, 236);
+    position: fixed;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 99;
+    display: inline-block;
+    line-height: 50px;
+    i{
+        font-size: 25px;
+    }
+}
+
+.phone-call:before {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: -15px;
+    left: -15px;
+    background-color: rgb(77, 178, 236);
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    opacity: 0.6;
+    -webkit-animation: pulse 1s ease-out;
+    animation: pulse 1.8s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+    }
+    25% {
+        -webkit-transform: scale(0.3);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(0.6);
+        opacity: .6;
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        opacity: .3;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(0.3);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.6);
+        opacity: .6;
+    }
+    75% {
+        transform: scale(0.9);
+        opacity: .3;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+  
+  
+
+.phone-call + .tooltip.right > .tooltip-arrow {
+    border-right: 5px solid rgb(77, 178, 236); 
+}
+.phone-call  + .tooltip > .tooltip-inner {
+    background-color:rgb(77, 178, 236); 
+    color: #FFFFFF; 
+    border: 1px solid rgb(77, 178, 236); 
+    padding: 15px;
+    font-size: 14px;
+}
+
+// ads banner bottom
+.bnc_ads_banner{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 999;
+    transition: 0.5s;
+    img{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .close_hidden{
+        position: absolute;
+        top: 0;
+        right: 0;
+        .toggle_media{
+            background: none;
+            border: none;
+            outline: none;
+        }
+        .close{
+            outline: none;  
+            i{
+                color: #000;
+            }
+        }   
+    }
+    
+}
+.mediashow{
+    transform: translateY(90%) !important;  
+}
+[data-toggle="collapse"].fa:before {
+    content: "\f068";
+}
+
+[data-toggle="collapse"].collapsed.fa:before {
+    content: "\f067";
+}

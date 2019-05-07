@@ -1,0 +1,92 @@
+.bnc_footer{
+    margin-top: 30px;
+    &_mid{
+        padding: 40px;
+        background: #191919bf;
+        &_widget{
+            p{
+                color: #fff;
+            }
+            a{
+                color:#fff;
+                font-size: 14px;
+                &:hover{
+                    color: #4db2ec;
+                }
+            }
+            &_logo{
+                a{
+                    display: inline-block;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            &_copyright{
+                span{
+                    color:#aaa;
+                }
+            }
+            &_newsletter{
+                position: relative;
+                input{
+                    height: 40px;
+                    border: 2px solid #eceef2;
+                    width: 100%;
+                    padding: 0px 15px;
+                    -webkit-transition: 0.2s border;
+                    transition: 0.2s border;
+                    padding-right: 55px;
+                }
+                button{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 40px;
+                    line-height: 40px;
+                    width: 40px;
+                    text-align: center;
+                    color: #a7b3c6;
+                    background: transparent;
+                    border: none;
+                    border-radius: 0px 2px 2px 0px;
+                    -webkit-transition: 0.2s opacity;
+                    transition: 0.2s opacity;
+                }
+            }
+            &_social{
+                display: flex;
+                padding:15px 0;
+                a{
+                    text-align: center;
+                    display: block;
+                    margin-right: 15px;
+                    i{
+                        font-size: 18px;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        background-color: rgba(255,255,255,.03);
+                    }
+                }
+            }
+        }
+        .bnc_footer_mid_widget_link{
+            li{
+                padding:5px 0;
+                a{
+                    padding-bottom: 5px;
+                    display: block;
+                }
+            }
+           
+        }
+    }    
+}
+.bnc_footer_bot_copyright{
+    display: flex;
+    justify-content: center;
+    background: #17171a;
+    padding: 10px 0;
+    color:#fff;
+}
